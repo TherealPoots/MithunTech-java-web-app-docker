@@ -16,7 +16,7 @@ node{
         sh 'docker build -t dockerhandson/java-web-app .'
     }
     
-    stage('Push Docker Image'){
+ /*   stage('Push Docker Image'){
         withCredentials([string(credentialsId: 'Docker_Hub_Pwd', variable: 'Docker_Hub_Pwd')]) {
           sh "docker login -u dockerhandson -p ${Docker_Hub_Pwd}"
         }
@@ -35,6 +35,6 @@ node{
        }
        
     }
-     
+      */
      
 }
