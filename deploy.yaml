@@ -17,8 +17,8 @@ spec:
         env:
         - name: SPRING_PROFILES_ACTIVE
           value: production-microservice
-        image:MithunTech-java-web-app-docker/deploy
-     // imagePullPolicy: Never
+        image:therealpoots/java-web-app
+        #imagePullPolicy: Never
         readinessProbe:
           httpGet:
             path: /
@@ -39,6 +39,6 @@ spec:
   ports:
     - name: http
       port: 80
-      Loadbalancer: 30080
+      LoadBalancer: 30080
 
-  type: NodePort
+  type: LoadBalancer 
