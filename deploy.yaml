@@ -14,10 +14,10 @@ spec:
     spec:
       containers:
       - name: webapp
-        env:
-        - name: SPRING_PROFILES_ACTIVE
-          value: production-microservice
-        image:therealpoots/java-web-app
+       # env:
+       # - name: SPRING_PROFILES_ACTIVE
+        #  value: production-microservice
+        image: therealpoots/java-web-app
         #imagePullPolicy: Never
         readinessProbe:
           httpGet:
