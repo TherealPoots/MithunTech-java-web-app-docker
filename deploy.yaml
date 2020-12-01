@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: webapp
-        env:
+     #   env:
      #   - name: SPRING_PROFILES_ACTIVE
      #     value: production-microservice
         image: therealpoots/java-web-app
