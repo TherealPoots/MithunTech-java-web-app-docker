@@ -39,6 +39,6 @@ spec:
   ports:
     - name: http
       port: 80
-      LoadBalancer: 30080
+      LoadBalancer: 80
 
   type: LoadBalancer 
